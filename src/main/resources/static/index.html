@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banco de Alimentos ALMORA – Ingresar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/almora.css">
+</head>
+<body>
+<div class="acceso">
+  <section class="acceso-lado">
+    <div class="marca" id="marca-acceso">
+      <span id="logo-acceso"></span>
+      <div><div class="marca-nombre">Banco de<br>Alimentos</div><div class="marca-lema">Compartir también es alimentar</div></div>
+    </div>
+    <div>
+      <h1>Cada donación cuenta.</h1>
+      <p>Gestiona donaciones, controla el inventario con el método FEFO y sigue cada entrega hasta las comunidades que más lo necesitan.</p>
+    </div>
+    <div class="acceso-foto" role="img" aria-label="Caja de frutas y verduras frescas"></div>
+  </section>
+
+  <section class="acceso-formulario">
+    <div class="acceso-caja">
+      <div id="mensaje-acceso"></div>
+
+      <form id="form-login" novalidate>
+        <h2>Iniciar sesión</h2>
+        <p>Ingresa con tu correo y contraseña.</p>
+        <div class="campo"><label for="correo">Correo</label><input id="correo" name="correo" type="email" autocomplete="username" required></div>
+        <div class="campo"><label for="password">Contraseña</label><input id="password" name="password" type="password" autocomplete="current-password" required></div>
+        <button class="boton" type="submit">Ingresar</button>
+        <p style="margin-top:18px;color:var(--texto-2)">¿Quieres donar? <a href="#" id="ir-registro">Crea tu cuenta de donante</a></p>
+      </form>
+
+      <form id="form-registro" class="oculto" novalidate>
+        <h2>Registro de donante</h2>
+        <p>Crea tu cuenta para registrar donaciones, seguir su ruta y descargar tus certificados.</p>
+        <div class="campo"><label>Nombre o razón social *</label><input name="nombre" required maxlength="120"></div>
+        <div class="fila-campos">
+          <div class="campo"><label>Tipo de donante *</label><select name="tipoDonante" id="tipo-donante"></select></div>
+          <div class="campo"><label>Cédula o NIT</label><input name="identificacion" maxlength="20"></div>
+        </div>
+        <div class="fila-campos">
+          <div class="campo"><label>Correo *</label><input name="correo" type="email" required autocomplete="email"></div>
+          <div class="campo"><label>Teléfono *</label><input name="telefono" required></div>
+        </div>
+        <div class="fila-campos">
+          <div class="campo"><label>Dirección *</label><input name="direccion" required></div>
+          <div class="campo"><label>Ciudad</label><input name="ciudad" value="Cartagena"></div>
+        </div>
+        <div class="campo"><label>Contraseña * <small>(8+ caracteres, mayúscula, minúscula y número)</small></label><input name="password" type="password" autocomplete="new-password" required></div>
+        <button class="boton" type="submit">Crear cuenta</button>
+        <p style="margin-top:18px;color:var(--texto-2)">¿Ya tienes cuenta? <a href="#" id="ir-login">Inicia sesión</a></p>
+      </form>
+    </div>
+  </section>
+</div>
+<script type="module" src="/js/acceso.js"></script>
+</body>
+</html>

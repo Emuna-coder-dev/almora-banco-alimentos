@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banco de Alimentos ALMORA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/almora.css">
+</head>
+<body>
+<div class="app oculto" id="app">
+  <aside class="lateral">
+    <a class="marca" href="#/inicio">
+      <span id="logo"></span>
+      <div><div class="marca-nombre">Banco de<br>Alimentos</div><div class="marca-lema">Compartir también es alimentar</div></div>
+    </a>
+    <nav class="menu" id="menu" aria-label="Menú principal"></nav>
+    <div class="lateral-pie"><span id="logo-pie"></span><div>Juntos por<br>un mejor mañana</div></div>
+  </aside>
+
+  <div class="principal">
+    <header class="barra-superior">
+      <div class="usuario-menu">
+        <button class="usuario-boton" id="usuario-boton" aria-haspopup="true">
+          <span class="usuario-avatar" id="avatar"></span>
+          <span id="usuario-rol">Usuario</span>
+          <span id="flecha-usuario"></span>
+        </button>
+        <div class="usuario-desplegable oculto" id="usuario-desplegable">
+          <div class="info"><b id="usuario-nombre"></b><small id="usuario-correo"></small></div>
+          <button data-ir="#/configuracion">Mi perfil</button>
+          <button id="cerrar-sesion">Cerrar sesión</button>
+        </div>
+      </div>
+    </header>
+    <main class="contenido" id="contenido" tabindex="-1"></main>
+  </div>
+</div>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

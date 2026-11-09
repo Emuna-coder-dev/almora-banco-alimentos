@@ -1,0 +1,19 @@
+package com.almora.model.auditoria;
+
+public enum AccionAuditoria {
+    CREAR,
+    ACTUALIZAR,
+    CAMBIAR_ESTADO,
+    ANULAR,
+    ACTIVAR,
+    DESACTIVAR,
+    CAMBIAR_ROL,
+    CAMBIAR_PASSWORD,
+    EXPORTAR,
+    LOGIN_EXITOSO,
+    LOGIN_FALLIDO,
+    CUENTA_BLOQUEADA,
+    LOGOUT,
+    REUTILIZACION_TOKEN,
+    PROCESO_AUTOMATICO
+}
