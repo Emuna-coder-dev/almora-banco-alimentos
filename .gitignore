@@ -1,0 +1,17 @@
+# Secretos: NUNCA subir
+.env
+
+# Compilación de Maven
+target/
+
+# Respaldos y registros generados por la aplicación
+respaldos/
+*.log
+arranque.txt
+
+# Archivos del editor y del sistema
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
