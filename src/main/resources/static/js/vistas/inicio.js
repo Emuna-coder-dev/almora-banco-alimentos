@@ -5,7 +5,7 @@ import {
   primerDiaMes, unidad
 } from "../ui.js";
 
-const COLORES = ["#1f9d55", "#f2861d", "#f5c02e", "#4a90e2", "#8b5cf6"];
+const COLORES = ["#10B981", "#3B82F6", "#1B365D", "#f5c02e", "#f2861d"];
 
 export async function render(c) {
   if (esAdministrativo()) {
@@ -55,7 +55,7 @@ function dona(datos) {
   const r = 70, circ = 2 * Math.PI * r;
   let acumulado = 0;
   const segmentos = total === 0
-    ? `<circle cx="100" cy="100" r="${r}" fill="none" stroke="#e8eeeb" stroke-width="40"/>`
+    ? `<circle cx="100" cy="100" r="${r}" fill="none" stroke="#e6ecf4" stroke-width="40"/>`
     : datos.map((d, i) => {
         const largo = (d.valor / total) * circ;
         const s = `<circle cx="100" cy="100" r="${r}" fill="none" stroke="${COLORES[i % COLORES.length]}" stroke-width="40"
@@ -108,10 +108,10 @@ async function tableroAdministrador(c) {
       "Aquí puedes gestionar las donaciones, controlar el inventario<br>y realizar la distribución de alimentos a las comunidades<br>que más lo necesitan.")}
 
     <section class="indicadores">
-      ${indicador("ind-verde", ICONOS.caja("#1d6b44"), "#1e9e5a", "Donaciones recibidas", num(ind.totalDonaciones), `+${num(donMes.totalElementos)} este mes`, "#/donaciones")}
-      ${indicador("ind-azul", ICONOS.cubo("#2f62b8"), "#3b7be0", "Productos en inventario", num(stock), "unidades disponibles", "#/inventario")}
+      ${indicador("ind-verde", ICONOS.caja("#047857"), "#10B981", "Donaciones recibidas", num(ind.totalDonaciones), `+${num(donMes.totalElementos)} este mes`, "#/donaciones")}
+      ${indicador("ind-azul", ICONOS.cubo("#1d4ed8"), "#3B82F6", "Productos en inventario", num(stock), "unidades disponibles", "#/inventario")}
       ${indicador("ind-amarillo", ICONOS.calendario("#6b4d05"), "#f2a21d", "Alimentos próximos a vencer", num(alertas.totalLotes), "en los próximos 7 días", "#/inventario?vista=alertas")}
-      ${indicador("ind-morado", ICONOS.camion("#5b3cc4"), "#8b5cf6", "Distribuciones realizadas", num(entMes.totalElementos), "este mes", "#/distribucion")}
+      ${indicador("ind-morado", ICONOS.camion("#1B365D"), "#1B365D", "Distribuciones realizadas", num(entMes.totalElementos), "este mes", "#/distribucion")}
     </section>
 
     <div class="fila-2">
@@ -175,10 +175,10 @@ async function tableroDonante(c) {
     ${u.debeCambiarPassword ? `<div class="alerta" style="margin-top:16px">Estás usando una contraseña temporal. <a href="#/configuracion">Cámbiala aquí</a>.</div>` : ""}
 
     <section class="indicadores">
-      ${indicador("ind-verde", ICONOS.caja("#1d6b44"), "#1e9e5a", "Mis donaciones", num(impacto.totalDonaciones), "registradas", "#/donaciones")}
-      ${indicador("ind-azul", ICONOS.cubo("#2f62b8"), "#3b7be0", "Unidades donadas", num(impacto.unidadesDonadas), `${num(impacto.unidadesEnBodega)} en bodega`, "#/donaciones")}
+      ${indicador("ind-verde", ICONOS.caja("#047857"), "#10B981", "Mis donaciones", num(impacto.totalDonaciones), "registradas", "#/donaciones")}
+      ${indicador("ind-azul", ICONOS.cubo("#1d4ed8"), "#3B82F6", "Unidades donadas", num(impacto.unidadesDonadas), `${num(impacto.unidadesEnBodega)} en bodega`, "#/donaciones")}
       ${indicador("ind-amarillo", ICONOS.calendario("#6b4d05"), "#f2a21d", "Certificados", num(impacto.certificadosDisponibles), "disponibles para descargar", "#/donaciones")}
-      ${indicador("ind-morado", ICONOS.camion("#5b3cc4"), "#8b5cf6", "Unidades entregadas", num(impacto.unidadesEntregadas), `a ${fundaciones.length} fundación(es)`, "#/seguimiento")}
+      ${indicador("ind-morado", ICONOS.camion("#1B365D"), "#1B365D", "Unidades entregadas", num(impacto.unidadesEntregadas), `a ${fundaciones.length} fundación(es)`, "#/seguimiento")}
     </section>
 
     <div class="fila-2b">

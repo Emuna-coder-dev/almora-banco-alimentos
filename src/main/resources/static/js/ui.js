@@ -225,12 +225,8 @@ export function paginacion(p, alCambiar) {
 
 // ------------------------------------------------------------------ iconos (SVG)
 export const ICONOS = {
-  logo: `<svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <path d="M32 54C18 44 8 35 8 23.5 8 16 13.8 10 21 10c4.6 0 8.6 2.4 11 6 2.4-3.6 6.4-6 11-6 7.2 0 13 6 13 13.5C56 35 46 44 32 54z"/>
-    <path d="M32 46V30" /><path d="M32 34c-6 0-10-4-10-9 6 0 10 4 10 9z" fill="#2fb36b" stroke="#fff"/>
-    <path d="M32 31c0-6 4-10 10-10 0 6-4 10-10 10z" fill="#7fd6a0" stroke="#fff"/>
-    <path d="M6 44c4 6 10 10 18 12M58 44c-4 6-10 10-18 12" /></svg>`,
-  manoCorazon: `<svg viewBox="0 0 80 80" fill="none" stroke="#8fe0b0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    logo: `<span class="marca-isotipo"><img src="/img/isotipo.png" alt="Isotipo del banco de alimentos"></span>`,
+    manoCorazon: `<svg viewBox="0 0 80 80" fill="none" stroke="#6ee7b7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <path d="M40 40c-8-6-14-11-14-18 0-4.5 3.4-8 7.6-8 2.7 0 5 1.4 6.4 3.5 1.4-2.1 3.7-3.5 6.4-3.5 4.2 0 7.6 3.5 7.6 8 0 7-6 12-14 18z"/>
     <path d="M40 34v-9M40 28c-3 0-5-2-5-5 3 0 5 2 5 5zM40 26c0-3 2-5 5-5 0 3-2 5-5 5z"/>
     <path d="M10 52h10l12 4h12c2 0 3 1.5 3 3s-1 3-3 3H32M47 59l14-6c2-.8 4 0 4.6 1.8.5 1.5-.2 3-1.6 3.8L44 68H24l-14-4"/></svg>`,
@@ -247,7 +243,7 @@ export const ICONOS = {
   caja: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4 7v10l8 4 8-4V7l-8-4z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg>`,
   cubo: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3z"/><path d="M4 7.5 12 12l8-4.5M12 12v9"/></svg>`,
   calendario: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.8" stroke-linecap="round"><rect x="3.5" y="5" width="15" height="14" rx="2"/><path d="M3.5 9.5h15M7.5 3v4M14.5 3v4"/><circle cx="18" cy="17" r="4" fill="#f8d462"/><path d="M18 15.2V17l1.2.8"/></svg>`,
-  camion: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9.5h4.5L21 13v3h-8z"/><circle cx="6" cy="18" r="2" fill="#c3b2f3"/><circle cx="17" cy="18" r="2" fill="#c3b2f3"/></svg>`,
+  camion: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="1.8" stroke-linejoin="round"><path d="M2 6h11v10H2zM13 9.5h4.5L21 13v3h-8z"/><circle cx="6" cy="18" r="2" fill="#86e2c0"/><circle cx="17" cy="18" r="2" fill="#86e2c0"/></svg>`,
   flecha: (c) => `<svg viewBox="0 0 24 24" fill="none" stroke="${c}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18 18 6M9 6h9v9"/></svg>`,
   familias: `<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M14.5 14.2c3.2-.6 6.5 1.2 6.5 4.8"/></svg>`,
   hoja: `<svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15"/><path d="M5 19 14 10"/></svg>`,
