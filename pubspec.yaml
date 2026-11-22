@@ -1,0 +1,29 @@
+name: almora_movil
+description: "ALMORA Donante - App movil del Banco de Alimentos (solo para donantes)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Peticiones HTTP a la API REST del backend (Spring Boot)
+  http: ^1.2.2
+  # Guarda la sesion (token de refresco) de forma cifrada en el celular
+  flutter_secure_storage: ^9.2.2
+  # Carpeta temporal donde se guarda el certificado PDF descargado
+  path_provider: ^2.1.4
+  # Abre el certificado PDF con el visor del celular
+  open_filex: ^4.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/isotipo.png
